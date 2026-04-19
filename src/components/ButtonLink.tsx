@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Props = {
   href: string;
   label: string;
@@ -25,7 +27,7 @@ export default function ButtonLink({
       </a>
 
       <div className="mt-2">
-        <img
+        <Image
           src={src}
           alt="icon"
           style={{

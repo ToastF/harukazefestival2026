@@ -1,12 +1,13 @@
 import ButtonLink from "@/components/ButtonLink";
 import { LINKS } from "@/lib/Constants";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="container text-center mt-5">
 
       <div className="mb-5">
-        <img
+        <Image
           src="/images/logo_cropped.png" 
           alt="Harukaze Festival Logo"
           className="img-fluid"
@@ -36,7 +37,7 @@ export default function Home() {
 
       {/* Image */}
       <div className="mt-5 mb-5">
-        <img
+        <Image
           src="/images/poster.png"
           alt="Event Poster"
           className="img-fluid rounded shadow"
