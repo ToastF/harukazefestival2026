@@ -4,6 +4,10 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 // import { Roboto } from 'next/font/google';
 
+export const metadata = {
+  title: "Harukaze Festival 2026",
+};
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'], // choose what you need

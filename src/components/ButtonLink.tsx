@@ -30,6 +30,8 @@ export default function ButtonLink({
         <Image
           src={src}
           alt="icon"
+          width={100}   // required
+          height={100}  // required
           style={{
             width: imgWidth || "100px",
             height: "auto",
