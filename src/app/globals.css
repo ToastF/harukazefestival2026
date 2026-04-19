@@ -1,17 +1,10 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --skyblue: #9cb6d9;
+  --blue: #3293f1;
+  --yellow: #fff4ca;
+  --pink: #f6bdf0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
-  height: 100%;
+  --foreground: #1a1a1a;
 }
 
 html,
@@ -20,30 +13,137 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none; 
+}
+
 body {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('/images/background_hrkz_2.jpeg');
+
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+.cloud-btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 
-a {
-  color: inherit;
+  padding: 1.2rem 3rem;
+  color: #ffffff;
+  background: var(--blue);
+
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-decoration: none;
+
+  text-shadow:
+    1px 1px 0 #3293f1,
+   -1px 1px 0 #3293f1,
+    1px -1px 0 #3293f1,
+   -1px -1px 0 #3293f1,
+    2px 0 0 #3293f1,
+   -2px 0 0 #3293f1,
+    0 2px 0 #3293f1,
+    0 -2px 0 #3293f1;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.cloud-btn::before,
+.cloud-btn::after {
+  content: '';
+  position: absolute;
+  background: var(--blue);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.cloud-btn::before {
+  width: 80px;
+  height: 60px;
+  top: -15px;
+  right: 15%;
+}
+
+.cloud-btn::after {
+  width: 100px;
+  height: 60px;
+  top: -15px;
+  left: 15%;
+}
+
+.cloud-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.cloud-btn:hover::before {
+  top: -20px;
+}
+
+.cloud-btn:hover::after {
+  top: -25px;
+}
+
+@media (max-width: 768px) {
+  .cloud-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
+
+  .cloud-btn::before {
+    width: 60px;
+    height: 45px;
+  }
+
+  .cloud-btn::after {
+    width: 70px;
+    height: 45px;
+  }
+}
+
+.cloud-blue {
+  background: var(--blue);
+  color: white;
+}
+
+.cloud-yellow {
+  background: var(--yellow);
+  color: white;
+}
+
+.cloud-pink {
+  background: var(--pink);
+  color: white;
+}
+
+.cloud-blue::before,
+.cloud-blue::after {
+  background: var(--blue);
+}
+
+.cloud-yellow::before,
+.cloud-yellow::after {
+  background: var(--yellow);
+}
+
+.cloud-pink::before,
+.cloud-pink::after {
+  background: var(--pink);
 }
