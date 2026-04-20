@@ -34,18 +34,28 @@ body {
   background-attachment: fixed;
 }
 
+h1 {
+  color: white;
+}
+/* Buttons */
 .cloud-btn {
+  border: none;
+  outline: none;
+  
   display: inline-block;
   position: relative;
   z-index: 1;
 
-  padding: 1.2rem 3rem;
+  padding: clamp(0.9rem, 2vw, 1.4rem)
+           clamp(1.8rem, 4vw, 3.5rem);
+
+  font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+
   color: #ffffff;
   background: var(--blue);
 
   border-radius: 100px;
   font-weight: 600;
-  font-size: 1.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
@@ -75,15 +85,15 @@ body {
 }
 
 .cloud-btn::before {
-  width: 80px;
-  height: 60px;
+  width: clamp(60px, 6vw, 90px);
+  height: clamp(45px, 4vw, 70px);
   top: -15px;
   right: 15%;
 }
 
 .cloud-btn::after {
-  width: 100px;
-  height: 60px;
+  width: clamp(70px, 7vw, 110px);
+  height: clamp(45px, 4vw, 70px);
   top: -15px;
   left: 15%;
 }
@@ -146,4 +156,377 @@ body {
 .cloud-pink::before,
 .cloud-pink::after {
   background: var(--pink);
+}
+
+/* Timeline */
+.timeline-title {
+  color: white;
+}
+.timeline-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTER LINE */
+.timeline-list::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+
+  background: linear-gradient(
+    to bottom,
+    var(--blue),
+    var(--yellow),
+    var(--pink)
+  );
+
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* EACH ITEM */
+.timeline-list li {
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* CIRCLE */
+.timeline-list li::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+
+  background: var(--dot-color, var(--blue));
+
+  border-radius: 50%;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, 0);
+}
+
+/* CARD */
+.timeline_content {
+  width: 45%;
+  padding: 20px;
+
+  border: 4px solid var(--card-color, var(--blue));
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE (default) */
+.timeline_content {
+  float: left;
+  text-align: right;
+}
+
+/* RIGHT SIDE */
+.timeline-list li:nth-child(even) .timeline_content {
+  float: right;
+  text-align: left;
+}
+
+/* TEXT */
+.timeline-year {
+  font-size: clamp(16px, 4vw, 22px);
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.timeline_content h4 {
+  margin: 10px 0;
+
+  font-size: clamp(20px, 3.5vw, 18px);
+  font-weight: 700;
+}
+
+.timeline_content p {
+  margin: 10px 0;
+
+  font-size: clamp(16px, 3.5vw, 18px);
+}
+
+/* MOBILE: force everything to the right */
+@media (max-width: 768px) {
+
+  /* move the center line */
+  .timeline-list::before {
+    left: 24px;
+    transform: none;
+  }
+
+  /* align circle exactly on the line */
+  .timeline-list li::before {
+    left: 24px;
+    transform: translate(-50%, 0);
+  }
+
+  /* cards align properly to the right */
+  .timeline_content {
+    float: none;
+    width: calc(100% - 70px);
+    margin-left: 55px;
+    text-align: left;
+  }
+
+  .timeline-list li:nth-child(even) .timeline_content {
+    float: none;
+  }
+}
+
+/* Rules */
+.rules-center-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .rules-row {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .rules-row .cloud-btn {
+    font-size: 1.8rem;
+    padding: 2rem 5rem;
+    min-width: 260px;
+  }
+}
+
+.rules-card {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    var(--yellow) 50%,
+    var(--pink) 100%
+  );
+
+  border: 3px solid var(--blue);
+
+  box-shadow:
+    0 10px 30px rgba(50, 147, 241, 0.25),
+    0 0 0 6px rgba(156, 182, 217, 0.25);
+
+  position: relative;
+}
+
+/* subtle decorative glow */
+.rules-card::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 28px;
+  background: radial-gradient(
+    circle at top,
+    rgba(50, 147, 241, 0.25),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* title styling */
+.rules-title {
+  color: var(--blue);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(156, 182, 217, 0.6);
+}
+
+.rules-Do {
+  color: var(--blue);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(156, 182, 217, 0.6);
+}
+
+.rules-Dont {
+  color: tomato;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(156, 182, 217, 0.6);
+}
+
+/* content spacing */
+.rules-content {
+  font-size: 1rem;
+  color: var(--foreground);
+  overflow-wrap: break-word;  
+  word-break: break-word;
+}
+
+.caption-box {
+  white-space: pre-line; /* 👈 preserves line breaks */
+  background: rgba(156, 182, 217, 0.15);
+  padding: 12px;
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* desktop scaling */
+@media (min-width: 992px) {
+  .rules-card {
+    padding: 56px;
+  }
+
+  .rules-Do{
+    font-size: 2rem;
+  }
+
+  .rules-Dont{
+    font-size: 2rem;
+  }
+
+
+  .rules-title {
+    font-size: 2.8rem;
+  }
+
+  .rules-content {
+    font-size: 1.5rem;
+  }
+}
+
+/* Countdown */
+.countdown-card {
+  position: relative;
+  background: white;
+  border: 3px solid var(--blue);
+  border-radius: 24px;
+
+  padding: 3rem 3.5rem;
+  text-align: center;
+
+  width: fit-content;
+  max-width: 520px;
+  margin: 0 auto;
+
+  --intensity: 0;
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,0.15),
+    0 0 0 calc(2px + var(--intensity) * 5px) rgba(246, 189, 240, 0.22);
+
+  animation: pinkPulse 3.5s ease-in-out infinite;
+}
+
+/* background glow (slightly bigger radius) */
+.countdown-card::before {
+  content: "";
+  position: absolute;
+  inset: -50px;
+  z-index: -1;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(246, 189, 240, calc(0.1 + var(--intensity) * 0.25)),
+    rgba(255, 244, 202, calc(0.08 + var(--intensity) * 0.2)),
+    transparent 70%
+  );
+
+  filter: blur(35px);
+  opacity: 0.9;
+
+  animation: floatGlow 6s ease-in-out infinite;
+}
+
+/* title bigger */
+.countdown-title {
+  font-size: 1.8rem;
+  color: var(--blue);
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+}
+
+/* grid spacing bigger */
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+/* numbers bigger */
+.countdown-grid span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--foreground);
+}
+
+/* labels slightly bigger */
+.countdown-grid p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--blue);
+}
+
+/* keep subtle animation (no scaling increase needed) */
+@keyframes pinkPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* mobile tuning (important so it doesn't overflow) */
+@media (max-width: 576px) {
+  .countdown-card {
+    padding: 2rem 2.2rem;
+    max-width: 95%;
+  }
+
+  .countdown-title {
+    font-size: 1.4rem;
+  }
+
+  .countdown-grid span {
+    font-size: 1.5rem;
+  }
+
+  .countdown-grid p {
+    font-size: 0.85rem;
+  }
 }

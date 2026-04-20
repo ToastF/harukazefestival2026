@@ -3,8 +3,11 @@
 import { useState } from "react";
 
 import ButtonLink from "@/components/ButtonLink";
+import TimelineSection from "@/components/Timeline";
+import Countdown from "@/components/Countdown";
 import { LINKS } from "@/lib/Constants";
 import Image from "next/image";
+import NavButton from "@/components/NavButton";
 
 
 export default function Home() {
@@ -28,11 +31,12 @@ export default function Home() {
           }}
         />
       </div>
+      <Countdown/>
 
       <div className="row g-3 justify-content-center">
 
         <div className="col-12 col-md-6 col-lg-3">
-          <ButtonLink href={LINKS.rules} label="Rules" src="/images/Aiba.png" variant="blue" />
+          <NavButton href="/rules" label="Rules" src="/images/Aiba.png" variant="blue"/>
         </div>
 
         <div className="col-12 col-md-6 col-lg-3">
@@ -48,6 +52,8 @@ export default function Home() {
         </div>
 
       </div>
+
+      <TimelineSection/>
 
       <div className="mt-5 mb-5">
         <Image
