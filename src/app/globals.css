@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --skyblue: #9cb6d9;
   --blue: #3293f1;
   --yellow: #fff4ca;
@@ -37,6 +38,7 @@ body {
 h1 {
   color: white;
 }
+
 /* Buttons */
 .cloud-btn {
   border: none;
@@ -168,7 +170,6 @@ h1 {
   padding: 0;
 }
 
-/* CENTER LINE */
 .timeline-list::before {
   content: "";
   position: absolute;
@@ -187,7 +188,6 @@ h1 {
   transform: translateX(-50%);
 }
 
-/* EACH ITEM */
 .timeline-list li {
   position: relative;
   display: table;
@@ -195,7 +195,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-/* CIRCLE */
 .timeline-list li::before {
   content: "";
   position: absolute;
@@ -210,7 +209,6 @@ h1 {
   transform: translate(-50%, 0);
 }
 
-/* CARD */
 .timeline_content {
   width: 45%;
   padding: 20px;
@@ -224,19 +222,16 @@ h1 {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* LEFT SIDE (default) */
 .timeline_content {
   float: left;
   text-align: right;
 }
 
-/* RIGHT SIDE */
 .timeline-list li:nth-child(even) .timeline_content {
   float: right;
   text-align: left;
 }
 
-/* TEXT */
 .timeline-year {
   font-size: clamp(16px, 4vw, 22px);
   font-weight: 700;
@@ -258,22 +253,18 @@ h1 {
   font-size: clamp(16px, 3.5vw, 18px);
 }
 
-/* MOBILE: force everything to the right */
 @media (max-width: 768px) {
 
-  /* move the center line */
   .timeline-list::before {
     left: 24px;
     transform: none;
   }
 
-  /* align circle exactly on the line */
   .timeline-list li::before {
     left: 24px;
     transform: translate(-50%, 0);
   }
 
-  /* cards align properly to the right */
   .timeline_content {
     float: none;
     width: calc(100% - 70px);
@@ -338,7 +329,6 @@ h1 {
   position: relative;
 }
 
-/* subtle decorative glow */
 .rules-card::before {
   content: "";
   position: absolute;
@@ -352,7 +342,6 @@ h1 {
   z-index: -1;
 }
 
-/* title styling */
 .rules-title {
   color: var(--blue);
   font-size: 2.2rem;
@@ -377,7 +366,6 @@ h1 {
   text-shadow: 0 2px 0 rgba(156, 182, 217, 0.6);
 }
 
-/* content spacing */
 .rules-content {
   font-size: 1rem;
   color: var(--foreground);
@@ -386,7 +374,7 @@ h1 {
 }
 
 .caption-box {
-  white-space: pre-line; /* 👈 preserves line breaks */
+  white-space: pre-line; 
   background: rgba(156, 182, 217, 0.15);
   padding: 12px;
   border-left: 4px solid var(--blue);
@@ -394,7 +382,6 @@ h1 {
   font-family: inherit;
 }
 
-/* desktop scaling */
 @media (min-width: 992px) {
   .rules-card {
     padding: 56px;
@@ -441,7 +428,6 @@ h1 {
   animation: pinkPulse 3.5s ease-in-out infinite;
 }
 
-/* background glow (slightly bigger radius) */
 .countdown-card::before {
   content: "";
   position: absolute;
@@ -461,7 +447,6 @@ h1 {
   animation: floatGlow 6s ease-in-out infinite;
 }
 
-/* title bigger */
 .countdown-title {
   font-size: 1.8rem;
   color: var(--blue);
@@ -469,28 +454,24 @@ h1 {
   font-weight: 700;
 }
 
-/* grid spacing bigger */
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
 }
 
-/* numbers bigger */
 .countdown-grid span {
   font-size: 2rem;
   font-weight: 800;
   color: var(--foreground);
 }
 
-/* labels slightly bigger */
 .countdown-grid p {
   margin: 0;
   font-size: 1rem;
   color: var(--blue);
 }
 
-/* keep subtle animation (no scaling increase needed) */
 @keyframes pinkPulse {
   0%, 100% {
     transform: scale(1);
@@ -511,7 +492,6 @@ h1 {
   }
 }
 
-/* mobile tuning (important so it doesn't overflow) */
 @media (max-width: 576px) {
   .countdown-card {
     padding: 2rem 2.2rem;
