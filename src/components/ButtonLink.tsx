@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   href: string;
@@ -17,14 +18,14 @@ export default function ButtonLink({
 }: Props) {
   return (
     <div className="text-center">
-      <a
+      <Link
         href={href}
         target="_blank"
         rel="noopener noreferrer"
         className={`cloud-btn cloud-${variant}`}
       >
         {label}
-      </a>
+      </Link>
 
       <div className="mt-2">
         <Image
