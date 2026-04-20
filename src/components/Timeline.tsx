@@ -6,8 +6,8 @@ export default function TimelineSection() {
     { year: "20 April 2026 - 24 May 2026", title: "Open Registration: Online Competition", desc: "Ilustrasi Digital, Poster SMA", color: "var(--blue)" },
     { year: "20 April 2026 - 25 May 2026", title: "Submission Period: Online Competition", desc: "", color: "var(--yellow)" },
     { year: "26 May 2026", title: "Technical Meeting: Offline Competition", desc: "via online", color: "var(--blue)" },
-    { year: "30 May 2026", title: "Day 1 Event", desc: "J-song, Coswalk Umum", color: "var(--yellow)" },
-    { year: "31 May 2026", title: "Day 2 Event", desc: "Coswalk SMA, Dance Cover, Project Sekai Tournament", color: "var(--yellow)" },
+    { year: "30 May 2026", title: "Day 1 Event", desc: "J-song, Coswalk Umum, Coswalk SMA", color: "var(--yellow)" },
+    { year: "31 May 2026", title: "Day 2 Event", desc: "Dance Cover, Project Sekai Tournament", color: "var(--yellow)" },
     { year: "31 May 2026", title: "Winner Announcement: Online Competition", desc: "", color: "var(--pink)" },
   ];
 
