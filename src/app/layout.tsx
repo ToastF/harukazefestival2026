@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
-
+import { Analytics } from "@vercel/analytics/next"
 import { Poppins } from 'next/font/google';
 // import { Roboto } from 'next/font/google';
 
@@ -30,6 +30,7 @@ export default function RootLayout({
 
         <main className="flex-grow-1">
           {children}
+          <Analytics />
         </main>
 
       </body>
