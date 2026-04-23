@@ -1,10 +1,11 @@
 import RulesTemplate from "@/components/RulesTemplate";
 
-export default function CoswalkUmumRulesPage() {
+export default function CoswalkSMASMKRulesPage() {
   return (
     <div>
       <RulesTemplate title="Coswalk">
-      <ol className="mb-0">
+        <ol className="mb-0">
+          <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA yang masih aktif pada saat pelaksanaan lomba.</li>
           <li>Coswalk ditetapkan untuk satu orang dalam setiap penampilan.</li>
           <li>Lama waktu performance setiap peserta <em>maksimal 1 menit</em>.</li>
           <li>Karakter dapat berasal dari game, anime, film, dan pop culture. Namun, Karakter Orisinal (Original Character/OC) dan impersonation <em>tidak diperbolehkan</em>.</li>
@@ -23,13 +24,13 @@ export default function CoswalkUmumRulesPage() {
           <li>Panitia berhak mendiskualifikasi peserta jika dianggap melanggar peraturan.</li>
           <li>Keputusan juri merupakan mutlak dan tidak dapat diganggu gugat.</li>
           <li><em>WAJIB</em> follow Instagram Harukaze Festival (@harufest_soushin) dan Soushin UNTAR (@soushin_untar).</li>
-      </ol>
+        </ol>
       </RulesTemplate>
-      <RulesTemplate title="Kriteria Penilaian">
+            <RulesTemplate title="Kriteria Penilaian">
         <ol className="mb-0">
           <li>Kreativitas dalam desain dan interpretasi karakter.</li>
           <li>Penggunaan aksesoris dan properti yang mendukung penampilan.</li>
-          <li>Penampilan di panggung, seperti pose, kepercayaan diri, ekspresi, dan interaksi.</li>
+          <li>Penampilan di panggung, seperti pose, ekspresi, dan interaksi.</li>
           <li>Kesesuaian kostum dengan karakter referensi.</li>
           <li>Kualitas kostum, makeup dan detail.</li>
         </ol>

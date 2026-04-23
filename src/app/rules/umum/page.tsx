@@ -5,7 +5,7 @@ import NavButton from "@/components/NavButton";
 export default function Umum() {
   return (
     <main className="container text-center rules-center-wrapper">
-      <h1 className="mb-5 mt-4 fw-bold">Umum</h1>
+      <h1 className="mb-5 mt-4 fw-bold">Peraturan dan Kriteria Penilaian Lomba Umum</h1>
 
 
       <div className="rules-row">

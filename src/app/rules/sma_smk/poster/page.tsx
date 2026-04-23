@@ -1,10 +1,11 @@
 import RulesTemplate from "@/components/RulesTemplate";
 
-export default function IlutrasiDigitalRulesPage() {
+export default function PosterRulesPage() {
   return (
     <div>
-      <RulesTemplate title="Ilutrasi Digital">
+      <RulesTemplate title="Poster">
         <ol className="mb-0">
+            <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA-SMK yang masih aktif pada saat pelaksanaan lomba.</li>
             <li>Setiap peserta hanya boleh mengunggah 1 poster.</li>
             <li>Tema dari perlombaan poster ini adalah &quot;輝く 春 へ&quot; atau &quot;Kagayaku Haru e&quot; (<i>Towards a
                 Shining Spring</i>) yang mencerminkan esensi dari momen yang bersinar dalam kehidupan.</li>
@@ -29,24 +30,24 @@ export default function IlutrasiDigitalRulesPage() {
               <ul>
                 <li>
                   Tag <strong>@harufest_soushin</strong> dan menggunakan hashtag
-                  <strong> #HarukazeFestival2026</strong> dan <strong>#IlustrasiHaruFest2026</strong>
+                  <strong> #HarukazeFestival2026</strong> dan <strong>#PosterHaruFest2026</strong>
                 </li>
 
                 <li>
-                  Setiap peserta <em>DIWAJIBKAN</em> menyertakan deskripsi makna ilustrasi
+                  Setiap peserta <em>DIWAJIBKAN</em> menyertakan deskripsi makna poster
                   (minimal 1 paragraf / 4 kalimat).
                 </li>
 
                 <li>
                   Menggunakan caption dengan format:
                   <div className="caption-box">
-                    {"🎏 Harukaze Festival 2026 - Lomba Ilustrasi 🎏\n" +
+                    {"🎏 Harukaze Festival 2026 - Lomba Poster\n" +
                     "☀️ KAGAYAKU HARU E ☀️\n" +
                     "(Nama Peserta)\n\n" +
-                    "(Judul Ilustrasi)\n" +
-                    "(Penjelasan Ilustrasi)\n" +
+                    "(Judul Poster)\n" +
+                    "(Penjelasan Poster)\n" +
                     "Minna de kagayaku~ ✨\n" +
-                    "#HarukazeFestival2026 #IlustrasiHaruFest2026"}
+                    "#HarukazeFestival2026 #PosterHaruFest2026"}
                   </div>
                 </li>
               </ul>
@@ -58,7 +59,7 @@ export default function IlutrasiDigitalRulesPage() {
           <li>Elemen visual yang tersusun secara menarik, rapi, dan mudah dipahami.</li>
           <li>Keunikan ide serta orisinalitas konsep yang ditampilkan.</li>
           <li>Tingkat kesesuaian karya dengan tema yang ditentukan.</li>
-          <li>Kemampuan ilustrasi dalam menarik perhatian dan minat audiens.</li>
+          <li>Kemampuan poster dalam menarik perhatian dan minat audiens.</li>
           <li>Komposisi gambar yang seimbang, harmonis, dan enak dipandang.</li>
           <li>Kejelasan dan efektivitas dalam menyampaikan pesan.</li>
         </ol>
