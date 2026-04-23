@@ -5,7 +5,7 @@ export default function CoswalkSMASMKRulesPage() {
     <div>
       <RulesTemplate title="Coswalk">
         <ol className="mb-0">
-          <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA yang masih aktif pada saat pelaksanaan lomba.</li>
+          <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA-SMK yang masih aktif pada saat pelaksanaan lomba.</li>
           <li>Coswalk ditetapkan untuk satu orang dalam setiap penampilan.</li>
           <li>Lama waktu performance setiap peserta <em>maksimal 1 menit</em>.</li>
           <li>Karakter dapat berasal dari game, anime, film, dan pop culture. Namun, Karakter Orisinal (Original Character/OC) dan impersonation <em>tidak diperbolehkan</em>.</li>
