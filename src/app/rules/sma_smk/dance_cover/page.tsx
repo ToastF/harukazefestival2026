@@ -5,7 +5,7 @@ export default function DanceCoverRulesPage() {
     <div>
       <RulesTemplate title="Dance Cover">
         <section>
-            <h2 className="fw-bold mb-2 rules-Subtitle">Peraturan Coswalk</h2>
+            <h2 className="fw-bold mb-2 rules-Subtitle">Peraturan Dance Cover</h2>
           <ol className="mb-0">
               <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA-SMK yang masih aktif pada saat pelaksanaan lomba.</li>
               <li>Peserta boleh berupa individu maupun grup.</li>
