@@ -100,7 +100,7 @@ export default function AboutSection() {
                     <PersonCard name="Kethy Sondakh" image="/images/Kethy_alt2.png" link={LINKS.kethy} />
                     <PersonCard name="Abi" image="/images/Abi.png" link={LINKS.abi} />
                     <PersonCard name="Miirukat" image="/images/Miirukat2.png" link={LINKS.miirukat} />
-                    <PersonCard name="Meia" image="/images/Meia.png" link={LINKS.meia} />
+                    <PersonCard name="Meia" image="/images/meia.png" link={LINKS.meia} />
                     <PersonCard name="Anggoro" image="/images/anggoro.png" link={LINKS.anggoro} />
                     <PersonCard name="tatonary" image="/images/tatonary.jpg" link={LINKS.tatonary} />
                     <PersonCard name="stipeanut" image="/images/stipeanut.jpg" link={LINKS.stipeanut} />
