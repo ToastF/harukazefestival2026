@@ -2,7 +2,7 @@ import RulesTemplate from "@/components/RulesTemplate";
 
 export default function ProjectSekaiRulesPage() {
   return (
-    <RulesTemplate title="Project Sekai">
+    <RulesTemplate title="Peraturan Project Sekai">
       <ol className="mb-0">
         <li>Project Sekai turnamen ditetapkan untuk satu orang (satu akun) dan tidak boleh digantikan di tengah turnamen.</li>
         <li>Setiap Pemain <em>WAJIB</em> menggunakan akunnya sendiri untuk berpartisipasi dalam Turnamen.</li>

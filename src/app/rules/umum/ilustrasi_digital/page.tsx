@@ -5,7 +5,7 @@ export default function IlutrasiDigitalRulesPage() {
     <div>
       <RulesTemplate title="Ilutrasi Digital">
         <section>
-            <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">Ilustrasi Digital</h2>
+            <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">Peraturan Ilustrasi Digital</h2>
             <ol className="mb-0">
                 <li>Setiap peserta hanya boleh mengunggah 1 poster.</li>
                 <li>Tema dari perlombaan poster ini adalah &quot;輝く 春 へ&quot; atau &quot;Kagayaku Haru e&quot; (<i>Towards a

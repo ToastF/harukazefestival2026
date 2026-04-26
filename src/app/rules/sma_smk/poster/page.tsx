@@ -5,7 +5,7 @@ export default function PosterRulesPage() {
     <div>
       <RulesTemplate title="Poster">
         <section>
-            <h2 className="fw-bold mb-4 rules-Subtitle">Poster</h2>
+            <h2 className="fw-bold mb-4 rules-Subtitle">Peraturan Poster</h2>
             <ol className="mb-0">
                 <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA-SMK yang masih aktif pada saat pelaksanaan lomba.</li>
                 <li>Setiap peserta hanya boleh mengunggah 1 poster.</li>

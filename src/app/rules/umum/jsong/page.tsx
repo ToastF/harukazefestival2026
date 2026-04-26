@@ -5,7 +5,7 @@ export default function JsongRulesPage() {
     <div>
       <RulesTemplate title="J-song">
         <section>
-            <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">J-Song</h2>
+            <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">Peraturan J-Song</h2>
             <ol className="mb-0">
               <li>Tema dan genre lagu bebas, namun <em>DILARANG</em> menggunakan lagu yang eksplisit; seperti mengandung kata-kata, bahasa, maupun makna yang dianggap seksual, penuh kekerasan, atau menyinggung.</li>
               <li>Lagu yang dibawakan <em>WAJIB</em> berbahasa Jepang yang berasal dari Jepang.</li>

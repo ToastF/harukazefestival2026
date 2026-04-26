@@ -5,7 +5,7 @@ export default function CoswalkUmumRulesPage() {
     <div>
       <RulesTemplate title="Coswalk">
         <section>
-              <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">Coswalk</h2>
+              <h2 className="fw-bold mb-4 mt-4 rules-Subtitle">Peraturan Coswalk</h2>
               <ol className="mb-0">
                   <li>Coswalk ditetapkan untuk satu orang dalam setiap penampilan.</li>
                   <li>Lama waktu performance setiap peserta <em>maksimal 1 menit</em>.</li>
