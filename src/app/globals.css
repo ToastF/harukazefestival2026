@@ -385,6 +385,57 @@ h1 {
   align-items: center;
 }
 
+/* Scroll Down Arrow */
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+
+  z-index: 10;
+  pointer-events: none;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+
+  margin-top: -12px;
+
+  opacity: 0;
+
+  animation: scrollArrow 2s infinite;
+}
+
+.arrow-2 {
+  animation-delay: 0.3s;
+}
+
+@keyframes scrollArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
 
 /* About Section */
 .about-section {
@@ -417,7 +468,7 @@ h1 {
 }
 
 .person-card .card-inner {
-  width: 110px;
+  width: 150px;
   padding: 12px;
 
   border-radius: 16px;
@@ -534,50 +585,6 @@ h1 {
   justify-content: center;
 }
 
-.competition-card-vertical {
-  min-width: 160px;
-  height: 220px;
-
-  padding: 16px;
-
-  border-radius: 18px;
-
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(6px);
-
-  border: 1px solid rgba(255,255,255,0.15);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  text-decoration: none;
-  color: white;
-
-  transition: all 0.25s ease;
-
-  flex: 0 0 auto;
-
-  scroll-snap-align: center;
-
-  opacity: 0.7;
-  transform: scale(0.95);
-}
-
-.competition-card-vertical.active {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.competition-card-vertical:hover {
-  transform: translateY(-8px) scale(1.05);
-  background: rgba(255,255,255,0.15);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-
-  position: relative;
-  z-index: 2;
-}
-
 .badge {
   font-size: 0.75rem;
   padding: 4px 10px;
@@ -639,14 +646,14 @@ h1 {
 }
 
 .competition-card-vertical {
-  min-width: 170px;
+  min-width: 180px;
   height: 240px;
 
   padding: 20px;
 
   border-radius: 18px;
 
-  background: rgba(255,255,255,0.08);
+  background: rgb(36, 127, 219);
   backdrop-filter: blur(6px);
 
   border: 1px solid rgba(255,255,255,0.15);
@@ -701,7 +708,7 @@ h1 {
 
 .competition-card-vertical:hover {
   transform: translateY(-8px) scale(1.05);
-  background: rgba(255,255,255,0.15);
+  background: rgb(56, 148, 241);
   box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
@@ -858,7 +865,7 @@ h1 {
   text-decoration: none;
   color: white;
 
-  background: rgba(255,255,255,0.08);
+  background: rgb(36, 127, 219);
   backdrop-filter: blur(8px);
 
   border: 1px solid rgba(255,255,255,0.15);
@@ -873,7 +880,7 @@ h1 {
 
 .rules-card:hover {
   transform: translateY(-8px) scale(1.03);
-  background: var(--blue);
+  background: rgb(56, 148, 241);
   box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 

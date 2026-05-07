@@ -55,8 +55,16 @@ export default function Navbar() {
           <a href="#timeline">Timeline</a>
           <Link href="/rules">Rules</Link>
 
+          <a href={LINKS.contact1} target="_blank">
+            Instagram
+          </a>
+
           <a href={LINKS.contact2} target="_blank">
-            Contact Us
+            WhatsApp
+          </a>
+          
+          <a href={LINKS.contact3} target="_blank">
+            Twitter / X
           </a>
 
           <a
@@ -85,15 +93,23 @@ export default function Navbar() {
           <a href="#competition" onClick={closeMenu}>Competitions</a>
           <a href="#timeline" onClick={closeMenu}>Timeline</a>
           <Link href="/rules" onClick={closeMenu}>Rules</Link>
+          
+          <a href={LINKS.contact1} target="_blank" onClick={closeMenu}>
+            Instagram
+          </a>
 
           <a href={LINKS.contact2} target="_blank" onClick={closeMenu}>
-            Contact Us
+            WhatsApp
+          </a>
+
+          <a href={LINKS.contact3} target="_blank" onClick={closeMenu}>
+            Twitter / X
           </a>
 
           <a
             href={LINKS.register}
             target="_blank"
-            className="nav-register-btn"
+            className="nav-register-btn text-center"
             onClick={closeMenu}
           >
             Register

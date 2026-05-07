@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Countdown from "../Countdown";
+import ScrollDownIndicator from "../ScrollDownIndicator";
 
 export default function HeroSection() {
   return (
@@ -23,6 +24,7 @@ export default function HeroSection() {
 
         <Countdown />
 
+        <ScrollDownIndicator/>
       </div>
     </section>
   );

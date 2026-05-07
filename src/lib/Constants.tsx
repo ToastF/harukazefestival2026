@@ -3,6 +3,7 @@ export const LINKS = {
   register: "https://forms.gle/zyMBnQFeUHyb6CFB9",
   contact1: "https://www.instagram.com/harufest_soushin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
   contact2: "https://api.whatsapp.com/send/?phone=6282154803352&text&type=phone_number&app_absent=0",
+  contact3: "https://x.com/harufest",
   freetime: "https://www.instagram.com/freetime.ofc?igsh=MWkwaDdlc21ud2Q1",
   gwen: "https://www.instagram.com/16wen_?igsh=MWs2cjFtZXZnYmN6eg==",
   miirukat: "https://www.instagram.com/miirukat?igsh=bmZiZmhob2g1cmdn",

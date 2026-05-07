@@ -5,9 +5,10 @@ type Props = {
   name: string;
   image: string;
   link: string;
+  subtitle: string;
 };
 
-export default function PersonCard({ name, image, link }: Props) {
+export default function PersonCard({ name, image, link, subtitle }: Props) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="person-card">
       <div className="card-inner text-center">
@@ -19,6 +20,7 @@ export default function PersonCard({ name, image, link }: Props) {
           className="rounded-circle mb-2"
         />
         <p className="mb-0">{name}</p>
+        <em>{subtitle}</em>
       </div>
     </a>
   );

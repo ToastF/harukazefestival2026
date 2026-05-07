@@ -116,7 +116,7 @@ export default function CompetitionSection() {
 
         </div>
 
-        <div className="mt-5 d-flex justify-content-center gap-3">
+        <div className="mt-5 d-flex justify-content-center text-center gap-3">
           <a href={LINKS.register} target="_blank" className="cta-btn primary">
             Register Now
           </a>

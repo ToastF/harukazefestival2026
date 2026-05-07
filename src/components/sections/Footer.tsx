@@ -3,7 +3,8 @@ import Link from "next/link";
 import { LINKS } from "@/lib/Constants";
 
 import { 
-  ChatBubbleLeftRightIcon,
+  ChatBubbleOvalLeftIcon,
+  XMarkIcon,
   CameraIcon 
 } from "@heroicons/react/24/solid";
 
@@ -54,8 +55,14 @@ export default function Footer() {
 
               {/* WhatsApp */}
               <a href={LINKS.contact2} target="_blank" className="icon-link">
-                <ChatBubbleLeftRightIcon className="footer-icon" />
+                <ChatBubbleOvalLeftIcon className="footer-icon" />
                 <span>WhatsApp</span>
+              </a>
+
+              {/* Twitter */}
+              <a href={LINKS.contact3} target="_blank" className="icon-link">
+                <XMarkIcon className="footer-icon" />
+                <span>Twitter / X</span>
               </a>
 
             </div>
