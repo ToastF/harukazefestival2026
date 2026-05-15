@@ -10,7 +10,7 @@ export default function DanceCoverRulesPage() {
               <li>Lomba ini terbuka khusus untuk siswa/i tingkat SMA-SMK yang masih aktif pada saat pelaksanaan lomba.</li>
               <li>Peserta boleh berupa individu maupun grup.</li>
               <li>Seluruh peserta <em>WAJIB</em> hadir saat <i>Technical Meeting</i> dan melakukan <i>rehearsal</i> sesuai jadwal.</li>
-              <li>Lagu yang dibawakan <em>WAJIB</em> berbahasa Jepang.</li>
+              <li>Lagu yang dibawakan <em>WAJIB</em> berbahasa Jepang yang berasal dari Jepang.</li>
               <li>Durasi penampilan adalah <em>minimal 2 menit</em> dan <em>maksimal 5 menit</em>.</li>
               <li><em>DILARANG</em> menggunakan lagu dengan lirik yang mengandung kata kasar, kekerasan, atau makna seksual.</li>
               <li>Gerakan (<i>choreography</i>) dan kostum <em>DILARANG</em> mengandung unsur sensual, provokatif, SARA, atau politik.</li>
@@ -18,6 +18,7 @@ export default function DanceCoverRulesPage() {
               <li><em>DILARANG</em> menggunakan properti berbahaya seperti senjata tajam, api, cairan licin, atau bahan kimia berbahaya.</li>
               <li>Kebersihan panggung setelah tampil adalah tanggung jawab peserta.</li>
               <li>Bersedia mengikuti seluruh rangkaian proses audisi hingga akhir serta hadir tepat waktu sesuai jadwal.</li>
+              <li>Keputusan juri merupakan mutlak dan tidak dapat diganggu gugat.</li>
               <li><em>WAJIB</em> follow Instagram Harukaze Festival (@harufest_soushin) dan Soushin UNTAR (@soushin_untar).</li>
           </ol>
         </section>

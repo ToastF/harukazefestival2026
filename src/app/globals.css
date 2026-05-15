@@ -1001,3 +1001,69 @@ h1 {
     font-size: 1.3rem;
   }
 }
+
+/* Submission */
+.submission-card{
+    margin-top:30px;
+    padding:24px;
+
+    border-radius:20px;
+
+    background:var(--blue);
+    border:1px solid rgba(255,255,255,0.08);
+
+    text-align:center;
+}
+
+.submission-card h4{
+    font-size:1.3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.submission-desc{
+    color:white;
+    margin-bottom:20px;
+}
+
+.submission-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+}
+
+.qr-image{
+    width:180px;
+    height:180px;
+
+    border-radius:16px;
+    background:white;
+    padding:10px;
+}
+
+.submission-btn{
+    display:inline-flex;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+    font-weight:700;
+
+    background:#e11d48;
+    color:white;
+
+    transition:.3s;
+}
+
+.submission-btn:hover{
+    transform:translateY(-2px);
+}
+
+.submission-note{
+    display:block;
+    margin-top:15px;
+    color:white;
+}

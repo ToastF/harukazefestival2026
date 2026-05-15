@@ -12,7 +12,7 @@ export default function CoswalkSMASMKRulesPage() {
             <li>Coswalk ditetapkan untuk satu orang dalam setiap penampilan.</li>
             <li>Lama waktu performance setiap peserta <em>maksimal 1 menit</em>.</li>
             <li>Karakter dapat berasal dari game, anime, film, dan pop culture. Namun, Karakter Orisinal (Original Character/OC) dan impersonation <em>tidak diperbolehkan</em>.</li>
-            <li><em>DILARANG</em> melakukan <i>crossdress</i> (baik laki-laki ke perempuan maupun sebaliknya).</li>
+            <li>Peserta boleh melakukan crossdress (baik laki-laki ke perempuan maupun sebaliknya). Namun, <em>WAJIB</em> menutup semua area tubuh.</li>
             <li>Peserta <em>DILARANG</em> menggunakan kostum yang menyinggung instansi, SARA, dan memicu keresahan publik.</li>
             <li>Peserta <em>WAJIB</em> menggunakan inner tube top, manset, stocking, dan lain-lain untuk mengurangi area tubuh yang terbuka.</li>
             <li>Penampilan <em>DILARANG</em> mengandung unsur SARA, politik, pornografi, dan hal-hal yang melanggar norma sosial.</li>

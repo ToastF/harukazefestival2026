@@ -1,4 +1,6 @@
 import RulesTemplate from "@/components/RulesTemplate";
+import {LINKS} from "@/lib/Constants";
+import ArtworkSubmissionCard from "@/components/ArtworkSubmissionCard";
 
 export default function IlutrasiDigitalRulesPage() {
   return (
@@ -18,7 +20,7 @@ export default function IlutrasiDigitalRulesPage() {
                 <li>Fitur wajah dan fisik maskot <em>tidak boleh diubah</em> (termasuk warna mata, warna rambut, tahi lalat, dan lain-lain).</li>
                 <li>Kostum boleh dimodifikasi tetapi tetap sesuai karakter asli.</li>
                 <li>Karya harus dirender dengan baik (arsir, shading, dll).</li>
-                <li>Format pengumpulan yang dilakukan melalui Google Form: PNG & PDF (Nama_Judul Poster).</li>
+                <li>Format pengumpulan yang dilakukan melalui <a target="_blank" href={LINKS.kumpul_illust}>Google Form</a>: PNG & PDF (Nama_Judul Poster).</li>
                 <li><em>WAJIB</em> menyertakan speedpaint (maks 2 menit).</li>
                 <li><em>DILARANG</em> menggunakan karya lama atau karya yang pernah dilombakan sebelumnya.</li>
                 <li>Karya harus original (tanpa AI, plagiarisme, tracing).</li>
@@ -66,6 +68,12 @@ export default function IlutrasiDigitalRulesPage() {
               <li>Kejelasan dan efektivitas dalam menyampaikan pesan.</li>
             </ol>
         </section>
+        <ArtworkSubmissionCard
+          title="Pengumpulan Karya Illustrasi Digital"
+          description="Unggah hasil karya Illustrasi Digital melalui Google Form berikut."
+          qrImage="/images/qr_illust.png"
+          formUrl={LINKS.kumpul_illust}
+        />
       </RulesTemplate>
     </div>
   );
